@@ -1,0 +1,101 @@
+@mixin title-h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+
+  @include sm-block () {
+    font-size: 6rem;
+    line-height: 1.166667;
+  }
+}
+
+@mixin title-h2 {
+  font-size: 3rem;
+  line-height: 1.333333;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+
+  @include sm-block () {
+    font-size: 4rem;
+    line-height: 1.2;
+  }
+}
+
+@mixin title-h3 {
+  font-size: 2.8rem;
+  line-height: 1.285714;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+
+  @include sm-block () {
+    font-size: 3rem;
+    line-height: 1.333333;
+  }
+}
+
+@mixin title-h4 {
+  font-size: 2.2rem;
+  line-height: 1.272727;
+  font-weight: normal;
+  letter-spacing: -0.02em;
+
+  @include sm-block () {
+    font-size: 2.4rem;
+    line-height: 1.333333;
+  }
+}
+
+@mixin subtitle {
+  font-size: 1.8rem;
+  line-height: 1.555555;
+  font-weight: normal;
+  letter-spacing: -0.02em;
+
+  @include sm-block () {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+}
+
+@mixin caption {
+  font-size: 1.1rem;
+  font-weight: normal;
+  line-height: 1.181818;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+@mixin text-body  {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-weight: normal;
+}
+
+h1, .title-h1 {
+  @include title-h1();
+}
+
+h2, .title-h2 {
+  @include title-h2();
+}
+
+h3, .title-h3 {
+  @include title-h3();
+}
+
+h4, .title-h4 {
+  @include title-h4();
+}
+
+.subtitle {
+  @include subtitle()
+}
+
+.caption {
+  @include caption();
+}
+
+.text-body {
+  @include text-body()
+}

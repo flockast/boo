@@ -1,0 +1,23 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  font-style: $font-style;
+  color: $color-primary;
+  line-height: $line-height;
+  background-color: $color-primary-inverse;
+}
+
+a {
+  color: $color-accent;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-accent-dark;
+    text-decoration: none;
+  }
+}
